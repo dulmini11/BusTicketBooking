@@ -1,7 +1,7 @@
 import React from 'react';
 import "./BusRegistration.css";
 
-const addbuses = () => {
+const busregistration = () => {
   return (
     <div className="container-A">
     <h2>Fill This Form</h2>
@@ -29,4 +29,4 @@ const addbuses = () => {
   )
 }
 
-export default addbuses
+export default busregistration
