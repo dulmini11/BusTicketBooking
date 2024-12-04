@@ -1,32 +1,73 @@
-import React from 'react';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./BusRegistration.css";
 
-const busregistration = () => {
+const BusRegistration = () => {
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  const navigate = useNavigate(); 
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    setFormSubmitted(true);
+
+    setTimeout(() => {
+      setFormSubmitted(false);
+      navigate("/"); // Redirect to the homepage
+    }, 3000); 
+  };
+
   return (
     <div className="container-A">
-    <h2>Fill This Form</h2>
+      <h2>Fill This Form</h2>
 
-    <form>
-        <label htmlFor='name'>Name*</label>
-        <input type ="text"  placeholder='Enter owner name' name='name'/>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="name">Name*</label>
+        <input
+          type="text"
+          placeholder="Enter owner name"
+          name="name"
+          required
+        />
 
-        <label htmlFor='contact'>contact*</label>
-        <input type ="text"  placeholder='Enter contact number' name='contact'/>
+        <label htmlFor="contact">Contact*</label>
+        <input
+          type="text"
+          placeholder="Enter contact number"
+          name="contact"
+          required
+        />
 
-        <label htmlFor='email'>Email*</label>
-        <input type ="email"  placeholder='Enter email' name='email'/>
+        <label htmlFor="email">Email*</label>
+        <input
+          type="email"
+          placeholder="Enter email"
+          name="email"
+          required
+        />
 
-        <label htmlFor='route'>Bus route</label>
-        <input type ="text"  placeholder='Enter bus route' name='route'/>
+        <label htmlFor="route">Bus Route</label>
+        <input
+          type="text"
+          placeholder="Enter bus route"
+          name="route"
+          required
+        />
 
-        <label htmlFor='capacity'>capacity</label>
-        <input type ="text"  placeholder='Enter bus capacity' name='capacity'/>
+        <label htmlFor="capacity">Capacity</label>
+        <input
+          type="text"
+          placeholder="Enter bus capacity"
+          name="capacity"
+          required
+        />
 
-        <button type='submit'>Submit</button>
-    </form> 
-        
-  </div>
-  )
-}
+        <button type="submit">Submit</button>
+      </form>
 
-export default busregistration
+      {formSubmitted && <div className="form-success-msg">Form Submitted Successfully!</div>}
+    </div>
+  );
+};
+
+export default BusRegistration;

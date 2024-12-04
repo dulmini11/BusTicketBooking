@@ -54,7 +54,9 @@ function HomePage() {
         <div className="intro-container">
           <p className="intro">
           The Southern Expressway bus booking system makes it easy to travel between Colombo and Matara quickly and comfortably.
-           Buses use the Southern Expressway (E01), which saves time compared to regular routes. You can book tickets online or at ticket counters, choose your travel time, and even select your seat. The buses are air-conditioned and provide a smooth, safe journey, making them a convenient choice for anyone traveling between these two cities.
+           Buses use the Southern Expressway (E01), which saves time compared to regular routes. 
+           You can book tickets online or at ticket counters, choose your travel time, and even select your seat.
+            The buses are air-conditioned and provide a smooth, safe journey, making them a convenient choice for anyone traveling between these two cities.
           </p>
           
           <p className="intro">

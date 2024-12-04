@@ -12,7 +12,6 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
-
   h2{
     font-size: x-large;
     text-align: center;
@@ -42,11 +41,7 @@
     border-radius: 5px;
     font-size: 15px;
     background-color: transparent;
-     
-  
-  }
-
-
+    }
   button{
     display: flex;
     justify-content: center;
@@ -64,7 +59,14 @@
   }
 
   button:hover {
-    background: linear-gradient(135deg,#2C74B3, #144272, #0e2a15); 
-    
-    transform: scale(1.05);/* Adds a subtle zoom effect to the button on hover */
+    background: linear-gradient(135deg,#2C74B3, #144272, #000000); 
+    transform: scale(1.05);
     }
+
+.form-success-msg {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}

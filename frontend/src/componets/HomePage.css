@@ -38,9 +38,9 @@
   
   .bus {
   position: absolute; /* Position the image on the wall */
-  top: 140%; /* Vertically center it */
-  width: auto; /* Maintain aspect ratio */
-  height: 40%; /* Adjust to fit content */
+  top: 140%; 
+  width: auto;
+  height: 40%; 
   animation: moveRightToLeft 8s linear infinite; /* Animation for motion */
   }
   
@@ -92,20 +92,18 @@
   border-radius: 50px;
   font-size: 15px;
   cursor: pointer;
-  display: flex; /* Enables flexbox */
-  justify-content: center; /* Horizontally centers the text */
-  align-items: center; /* Vertically centers the text */
-  
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
   }
-  
   
   .city {
     position: absolute; /* Position the image on the wall */
     right: -1%;
     top: -30%; /* Position it vertically as needed */
     width: 113%; /* Make it span the full width of the viewport */
-    height: 360%; /* Adjust height as needed */
-    z-index: -1; /* Send it to the background if required */
+    height: 360%; 
+    z-index: -1; 
   }
   
   .intro {
@@ -114,8 +112,6 @@
     color: #d1c0c0;
     font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
   }
-  
-  
   
   .inputs{
   margin-top: 70px;
@@ -163,9 +159,9 @@
   
   select {
     width: 180px; /* Set a consistent width */
-    padding: 8px; /* Add some padding for better usability */
-    font-size: 16px; /* Adjust font size for readability */
-    border-radius: 5px; /* Rounded corners */
+    padding: 8px;
+    font-size: 16px; 
+    border-radius: 5px; 
     cursor: pointer; 
     background-color: transparent;
     border-color: transparent;
