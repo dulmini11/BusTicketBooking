@@ -1,9 +1,10 @@
+import Login from './componets/Login';
+
 function App() {
   return (
-    <div><p>CW</p>
-      
-    </div>
+    <div><Login/></div>
   );
 }
 
-export default App;
+export default App;
+

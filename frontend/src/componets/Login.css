@@ -1,0 +1,115 @@
+.container-L{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 400px;
+    height: 100%;
+    /* margin-top: 35px;
+    margin-bottom: 5px; */
+    background: transparent;
+    border: 2px solid rgba(255,255,255, .2);
+    backdrop-filter:blur(70px) ;
+    box-shadow: 0 0 10px rgba(0,0,0, .2);
+    color:#fff;
+    /* padding-bottom: 5px; */
+    border-radius: 5%;
+  }
+  
+  .header-L{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    width:100%;
+    margin-top: 0px;
+  
+  }
+  
+  .text-L{
+    color:#0e2a15;
+    font-size: 48px;
+    font-weight: 700;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-top: 55px;
+  }
+  
+  .underline-L{
+    width: 61px;
+    height: 6px;
+    border-radius: 9px;
+  }
+  
+  .inputs-L{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    
+  }
+  
+  .input-L{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 350px;
+    height: 50px;
+    border: 2px solid rgba(255,255,255, .2);
+    backdrop-filter:blur(100px) ;
+    box-shadow: 0 0 10px rgba(0,0,0, .2);
+    border-radius: 15px;
+    margin-bottom: 15px;
+    margin-top: 25PX;
+    
+  
+  }
+  
+  input img{
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+  }
+  
+  .icon-L {
+    width: 30px; /* Smaller icon size */
+    height: 30px;
+    margin-right: 15px;
+    margin-left: 9px;
+  }
+  
+  
+  
+  .input-L input{
+    height: 50px;
+    width:400px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #000000;
+    font-size: 19px;
+  }
+  
+  .submit-container-L{
+    display: flex;
+    gap: 3px;
+    margin: 60px auto;
+  }
+  
+  .submit-L{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 50px;
+    color: #c1bbbbb1;
+    background:linear-gradient(135deg,  #0e2a15,#1d4c2a,#276849); 
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .submit-L:hover {
+    background: linear-gradient(135deg,#276849, #1d4c2a, #0e2a15); 
+    
+    transform: scale(1.05);/* Adds a subtle zoom effect to the button on hover */
+    }
