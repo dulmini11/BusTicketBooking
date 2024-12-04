@@ -1,0 +1,70 @@
+.container-A{
+    flex-direction: column;
+    margin: auto;
+    margin-top: 60px;
+    width: 700px;
+    height: 650px;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    backdrop-filter:blur(100px) ;
+    box-shadow: 0 0 20px rgba(4, 35, 10, 0.6);
+    border-radius: 5%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+
+  h2{
+    font-size: x-large;
+    text-align: center;
+    color: black;
+  }
+  
+  label{
+    font-size: 15px;
+    width: 70%;
+    margin-left: 2%;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #000000;
+    font-weight: bold;
+  }
+  
+  input{
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 96%;
+    margin-left: 2%;
+    padding: 17px;
+    box-sizing: border-box;
+    border: double #000000;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: transparent;
+     
+  
+  }
+
+
+  button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+    width: 220px;
+    height: 47px;
+    color: #c1bbbbb1;
+    background:linear-gradient(135deg,  #0e2a15,#1d4c2a,#276849); 
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 1px solid #0a3617;
+  }
+
+  button:hover {
+    background: linear-gradient(135deg,#276849, #1d4c2a, #0e2a15); 
+    
+    transform: scale(1.05);/* Adds a subtle zoom effect to the button on hover */
+    }
