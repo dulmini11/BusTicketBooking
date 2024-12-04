@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     margin: auto;
+    margin-top: 15px;
     width: 400px;
     height: 100%;
     /* margin-top: 35px;
@@ -26,7 +27,7 @@
   }
   
   .text-L{
-    color:#0e2a15;
+    color:#0c0721;
     font-size: 48px;
     font-weight: 700;
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -53,7 +54,7 @@
     margin: auto;
     width: 350px;
     height: 50px;
-    border: 2px solid rgba(255,255,255, .2);
+    border: 2px solid rgba(255, 255, 255, 0.015);
     backdrop-filter:blur(100px) ;
     box-shadow: 0 0 10px rgba(0,0,0, .2);
     border-radius: 15px;
@@ -88,6 +89,7 @@
     font-size: 19px;
   }
   
+  
   .submit-container-L{
     display: flex;
     gap: 3px;
@@ -101,7 +103,7 @@
     width: 220px;
     height: 50px;
     color: #c1bbbbb1;
-    background:linear-gradient(135deg,  #0e2a15,#1d4c2a,#276849); 
+    background:linear-gradient(135deg,  #000000,#144272,#2C74B3); 
     border-radius: 50px;
     font-size: 19px;
     font-weight: 700;
@@ -109,7 +111,7 @@
   }
 
   .submit-L:hover {
-    background: linear-gradient(135deg,#276849, #1d4c2a, #0e2a15); 
+    background: linear-gradient(135deg,#2C74B3,#144272,#000000); 
     
     transform: scale(1.05);/* Adds a subtle zoom effect to the button on hover */
     }

@@ -6,8 +6,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
-  /* background:linear-gradient( #677D6A ,#40534C,rgb(5, 26, 34)); */
+  background:linear-gradient( #001F3F ,#6A9AB0,#eedfbf); 
   /* background: linear-gradient(to right, rgb(52, 232, 158), rgb(15, 52, 67)); */
+
+
 }
 
 code {

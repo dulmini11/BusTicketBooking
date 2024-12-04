@@ -38,9 +38,9 @@
   
   .bus {
   position: absolute; /* Position the image on the wall */
-  top: 129%; /* Vertically center it */
+  top: 140%; /* Vertically center it */
   width: auto; /* Maintain aspect ratio */
-  height: 55%; /* Adjust to fit content */
+  height: 40%; /* Adjust to fit content */
   animation: moveRightToLeft 8s linear infinite; /* Animation for motion */
   }
   
@@ -87,8 +87,8 @@
   margin-right: 10px;
   width: 260px;
   height: 28px;
-  color: #ffffffb1;
-  background:linear-gradient(135deg,  #0e2a15,#1d4c2a,#276849); 
+  color: #c1bbbbb1;
+  background:linear-gradient(135deg,  #000000,#144272,#2C74B3); 
   border-radius: 50px;
   font-size: 15px;
   cursor: pointer;
@@ -101,10 +101,10 @@
   
   .city {
     position: absolute; /* Position the image on the wall */
-    right: 0%;
-    top: 80%; /* Position it vertically as needed */
-    width: 110.5%; /* Make it span the full width of the viewport */
-    height: 90%; /* Adjust height as needed */
+    right: -1%;
+    top: -30%; /* Position it vertically as needed */
+    width: 113%; /* Make it span the full width of the viewport */
+    height: 360%; /* Adjust height as needed */
     z-index: -1; /* Send it to the background if required */
   }
   
@@ -180,7 +180,7 @@
   width: 220px;
   height: 47px;
   color: #c1bbbbb1;
-  background:linear-gradient(135deg,  #0e2a15,#1d4c2a,#276849); 
+  background:linear-gradient(135deg,  #000000,#144272,#2C74B3);  
   border-radius: 50px;
   font-size: 19px;
   font-weight: 700;
@@ -188,13 +188,13 @@
   }
   
   .submit1:hover {
-  background: linear-gradient(135deg,#276849, #1d4c2a, #0e2a15); 
+  background: linear-gradient(135deg,#2C74B3, #144272, #000000); 
   
   transform: scale(1.05);/* Adds a subtle zoom effect to the button on hover */
   }
   
   .submit:hover {
-    background: linear-gradient(135deg,#276849, #1d4c2a, #0e2a15); 
+    background: linear-gradient(135deg,#2C74B3, #144272, #000000); 
     
     transform: scale(1.05);/* Adds a subtle zoom effect to the button on hover */
     }

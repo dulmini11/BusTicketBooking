@@ -1,7 +1,7 @@
 .container-A{
     flex-direction: column;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 40px;
     width: 700px;
     height: 650px;
     background: transparent;
@@ -55,7 +55,7 @@
     width: 220px;
     height: 47px;
     color: #c1bbbbb1;
-    background:linear-gradient(135deg,  #0e2a15,#1d4c2a,#276849); 
+    background:linear-gradient(135deg,  #000000,#144272,#2C74B3); 
     border-radius: 50px;
     font-size: 19px;
     font-weight: 700;
@@ -64,7 +64,7 @@
   }
 
   button:hover {
-    background: linear-gradient(135deg,#276849, #1d4c2a, #0e2a15); 
+    background: linear-gradient(135deg,#2C74B3, #144272, #0e2a15); 
     
     transform: scale(1.05);/* Adds a subtle zoom effect to the button on hover */
     }

@@ -1,4 +1,13 @@
-.h3{
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: linear-gradient(#001F3F, #6A9AB0, #eedfbf);
+    overflow: hidden; /* Prevent scrollbars */
+  }
+  .h3{
     display: flex;
     color: #0c451c;
 }
