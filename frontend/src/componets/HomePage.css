@@ -18,6 +18,18 @@
     margin-top: 10px;
     margin-right: 25px;
   }
+
+.logo {
+  font-size: 1.5rem;
+  font-family: 'Brush Script MT', cursive;
+  color: #7373be;
+  text-decoration: none;
+  position: fixed; 
+  top: 20px; /* Adjust top position */
+  left: 20px;
+  display: inline-block;
+  z-index: 999;
+}
   
   .header-part img {
     width: 50px; 

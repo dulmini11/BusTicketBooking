@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import "./HomePage.css"; 
 import calendar_icon from '../componets/images/calendar.png'
@@ -7,6 +6,7 @@ import location_icon from '../componets/images/location.png';
 import loging from '../componets/images/loging.png';
 import bus from '../componets/images/bus.png';
 import city from '../componets/images/city.png';
+import logo from '../componets/images/logo.png';
 
 function HomePage() {
   const locations = ["Matara", "Colombo"];
@@ -38,9 +38,11 @@ function HomePage() {
   }, []);
 
   return (
-    <div className="header-container">
-
+    <div className="header-container">      
       <div className="header-part">
+      <a href="#" className="logo">
+          QuickRoute E01.<span className="animate"></span>
+        </a>
       <button className="submit1" onClick={handleAddBuses}>Add Your Bus to this server</button>
         <img src={loging} alt="Loging" onClick={handleLogin} />
       </div>

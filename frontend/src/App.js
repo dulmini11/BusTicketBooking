@@ -3,11 +3,14 @@ import Login from './componets/Login';
 import HomePage from './componets/HomePage';
 import BusRegistration from './componets/BusRegistration';
 import Booking from './componets/Booking';
+import { Helmet } from 'react-helmet';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <Helmet>
+        <title>QuickRoute E01</title>
+      </Helmet>
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -19,7 +22,7 @@ function App() {
       </Router>  
       
       {/* <HomePage/> */}
-      </header>
+      
     </div>
   );
 }
