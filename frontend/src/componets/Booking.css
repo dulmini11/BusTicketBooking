@@ -1,15 +1,101 @@
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background: linear-gradient(#001F3F, #6A9AB0, #eedfbf);
-    overflow: hidden; /* Prevent scrollbars */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-y: auto; 
+  margin: 0; 
+  height: 100vh;
+}
+
+.route-container {
+  display: flex;
+  flex-wrap: wrap; 
+  padding: 20px;
+  margin-top: 70px;
+  justify-content: space-between; 
+}
+
+.route-section {
+  width: 100%; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+
+
+.bus-details-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  gap: 20px; 
+}
+
+.bus-detail {
+  flex: 1; /* Ensures equal width for each item */
+  min-width: 300px; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease-in-out;
+}
+
+.bus-detail:hover {
+  transform: translateY(-10px); /* Add hover effect */
+}
+
+.booking-form {
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.booking-form form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.booking-form form input {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.booking-form form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.booking-form form button:hover {
+  background-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+  .route-container {
+    flex-direction: column; /* Stack route sections vertically on small screens */
   }
 
- 
-  .h3{
-    display: flex;
-    color: #0c451c;
+  .bus-details-container {
+    flex-direction: column; /* Stack the bus details vertically */
+  }
+
+  .bus-detail {
+    width: 100%; /* Make each bus detail container full-width on smaller screens */
+    margin-bottom: 20px;
+  }
 }

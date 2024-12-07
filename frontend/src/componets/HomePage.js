@@ -7,10 +7,12 @@ import loging from "../componets/images/loging.png";
 import bus from "../componets/images/bus.png";
 import city from "../componets/images/city.png";
 
-function HomePage() {
+const HomePage = () => {
   const locations = ["Matara", "Colombo"];
   const [currentLocation, setCurrentLocation] = useState(locations[0]);
   const [showFooter, setShowFooter] = useState(false);
+  const [from, setFrom] = useState("Colombo");
+  const [to, setTo] = useState("Matara");
 
   const navigate = useNavigate();
 
@@ -23,11 +25,7 @@ function HomePage() {
   };
 
   const handleBooking = () => {
-    navigate("/Booking"); // Navigate to booking page
-  };
-
-  const handleNavigation = (path) => {
-    navigate(path); // Navigate to the specified path
+    navigate("/Booking", { state: { from, to } });
   };
 
   useEffect(() => {
@@ -93,18 +91,18 @@ function HomePage() {
 
         <div className="inputs">
           <div className="input-H">
-            <img src={location_icon} alt="location_icon" className="icon" />
-            <select name="From" id="From">
-              <option value="colombo">Colombo</option>
-              <option value="matara">Matara</option>
+            <img src={location_icon} alt="location icon" className="icon" />
+            <select value={from} onChange={(e) => setFrom(e.target.value)}>
+              <option value="Colombo">Colombo</option>
+              <option value="Matara">Matara</option>
             </select>
           </div>
 
           <div className="input-H">
-            <img src={location_icon} alt="location_icon" className="icon" />
-            <select name="From" id="From">
-              <option value="matara">Matara</option>
-              <option value="colombo">Colombo</option>
+            <img src={location_icon} alt="location icon" className="icon" />
+            <select value={to} onChange={(e) => setTo(e.target.value)}>
+              <option value="Matara">Matara</option>
+              <option value="Colombo">Colombo</option>
             </select>
           </div>
 

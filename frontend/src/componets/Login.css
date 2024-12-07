@@ -108,3 +108,11 @@
     
     transform: scale(1.05);/* Adds a subtle zoom effect to the button on hover */
     }
+
+    .form-success-msg {
+      color: rgb(0, 0, 0);
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 20px;
+    }
